@@ -1,0 +1,54 @@
+{
+  "platform": "Shopify",
+  "platform_status": "good",
+  "platform_status_label": "Modern Platform",
+  "platform_notes": "Shopify hosted at robocraze-com.myshopify.com — auto-scaling infrastructure, PCI-compliant, 99.99% uptime SLA. Suitable for Robo Craze's electronics catalog of 5,000+ products.",
+  "theme": {
+    "name": "Ella v6.6.1 (Custom: robocraze-website/Robocraze-new-develop)",
+    "type": "Third-party premium theme (HaloThemes) with custom development branch",
+    "status": "warning",
+    "status_label": "Custom Fork — Maintenance Risk",
+    "version_note": "Ella 6.6.1 is a premium theme from HaloThemes (not Shopify Theme Store) — running on a custom development branch 'Robocraze-new-develop'. This means theme updates from HaloThemes require manual merge, creating long-term maintenance overhead.",
+    "feature_note": "Ella includes native support for: quick-view, mega menus, advanced product tabs, collection filters, and sticky ATC — several of these features appear disabled or misconfigured (broken homepage collections, no quick-view on mobile, no tabbed descriptions)."
+  },
+  "checkout": {
+    "type": "GoKwik Checkout (Override)",
+    "status": "warning",
+    "status_label": "GoKwik Override",
+    "guest_note": "Guest checkout: Enabled via GoKwik — GoKwik handles address auto-fill, COD verification, and checkout optimization for Indian buyers",
+    "express_note": "Express checkout: GoKwik's 'Buy It Now' button detected on PDP — routes to GoKwik's optimized checkout flow bypassing Shopify native checkout",
+    "friction_note": "GoKwik script references found in page source blocklist (MS_BL) alongside Judge.me and other scripts — suggests script loading optimization is configured but GoKwik's checkout overlay may add latency on slower connections. The 'BUY IT NOW' and 'ADD TO CART' create two separate checkout paths that may confuse users."
+  },
+  "payments": {
+    "gateway": "GoKwik (Primary Gateway Router)",
+    "status": "good",
+    "status_label": "Comprehensive",
+    "methods_note": "Payment methods routed through GoKwik: UPI, Cards, Net Banking, Wallets — comprehensive coverage for Indian buyers",
+    "cod_note": "COD: Available (confirmed via 'Cash on Delivery Available' trust badge on PDP and cart In-Store Pickup section)",
+    "bnpl_note": "BNPL/EMI: Not detected — no Snapmint, Simpl, or bank EMI options found on PDP. Critical gap for products above Rs. 10,000 (3D printers, premium boards)"
+  },
+  "cdn": {
+    "provider": "Shopify CDN (Cloudflare)",
+    "status": "warning",
+    "status_label": "Needs Optimization",
+    "image_note": "Images: Served via Shopify CDN with Cloudflare — however, several homepage product images load slowly or fail to render, indicating oversized images or lazy-loading issues. Some product thumbnails show as blank containers during scroll.",
+    "compression_note": "Compression: Brotli/Gzip enabled via Shopify CDN. However, 37 external script tags detected including: Clarity, Axios (via unpkg.com), UUID library (via cdnjs), Bitespeed popups — external CDN dependencies add latency and third-party risk.",
+    "caching_note": "Cloudflare Turnstile/verification challenge detected on product pages in headless mode — aggressive bot protection may block search engine crawlers and affect SEO performance."
+  },
+  "security": {
+    "ssl_status": "SSL/TLS Active",
+    "status": "good",
+    "status_label": "Secure",
+    "https_note": "HTTPS: All pages served over TLS via Cloudflare — no mixed content detected",
+    "pci_note": "PCI DSS: Compliant via Shopify's hosted checkout infrastructure + GoKwik's PCI-compliant payment processing",
+    "cookie_note": "Cookie consent: No cookie consent banner detected — may be needed for compliance if serving international customers (GDPR/ePrivacy)"
+  },
+  "health": {
+    "good_count": 3,
+    "total": 6,
+    "class": "warning",
+    "icon": "⚠",
+    "summary": "3 of 6 technology areas are well-configured (Platform, Payments, Security) — 3 areas need attention (Theme maintenance, Checkout dual-path confusion, CDN image optimization)"
+  },
+  "narrative": "Robo Craze runs on Shopify with the Ella v6.6.1 premium theme (HaloThemes) customized on a development branch. GoKwik handles checkout optimization with COD verification. Microsoft Clarity provides heatmaps, GA4 + GTM handle analytics, and Facebook Pixel tracks ad conversions. Key concerns: (1) The Ella theme has many built-in features (quick-view, tabs, advanced filters) that appear disabled — re-enabling these would improve UX without new app costs, (2) GoKwik's checkout override creates a dual-path experience (ATC vs Buy Now) that may confuse users, (3) No EMI/BNPL integration despite selling products up to Rs. 4+ lakhs, (4) Cloudflare's aggressive bot protection may interfere with search engine indexing."
+}

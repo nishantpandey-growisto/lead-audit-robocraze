@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=375, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; width: 375px; }
+.proposed-badge { background: #0066cc; color: #fff; text-align: center; padding: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; }
+.announcement { background: #1a1a2e; color: #fff; padding: 8px 16px; text-align: center; font-size: 12px; font-weight: 500; }
+.announcement strong { color: #ffd700; }
+.header { display: flex; align-items: center; justify-content: space-between; padding: 10px 16px; background: #fff; border-bottom: 1px solid #eee; }
+.logo { font-size: 20px; font-weight: 800; color: #e53935; }
+.logo span { color: #1a1a1a; }
+.header-icons { display: flex; gap: 16px; font-size: 18px; color: #333; }
+.value-strip { display: flex; justify-content: space-around; padding: 10px 8px; background: #f8f9fa; border-bottom: 1px solid #eee; }
+.value-item { display: flex; align-items: center; gap: 4px; font-size: 10px; color: #333; font-weight: 500; }
+.value-icon { font-size: 14px; }
+.hero { position: relative; background: linear-gradient(135deg, #0a1628 0%, #1a2744 100%); padding: 24px 16px; min-height: 200px; }
+.hero-badge { background: #ffd700; color: #1a1a1a; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 4px; display: inline-block; margin-bottom: 10px; }
+.hero-title { font-size: 22px; font-weight: 800; color: #fff; line-height: 1.2; margin-bottom: 8px; }
+.hero-subtitle { font-size: 13px; color: #b0c4de; margin-bottom: 14px; line-height: 1.4; }
+.hero-cta { display: inline-block; padding: 10px 24px; background: #0066cc; color: #fff; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; }
+.hero-stats { display: flex; gap: 16px; margin-top: 16px; }
+.stat { text-align: center; }
+.stat-num { font-size: 16px; font-weight: 800; color: #ffd700; }
+.stat-label { font-size: 9px; color: #8899aa; margin-top: 2px; }
+.categories { padding: 16px; }
+.cat-header { font-size: 15px; font-weight: 700; color: #1a1a1a; margin-bottom: 12px; }
+.cat-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+.cat-item { background: #f0f4ff; border-radius: 10px; padding: 14px 8px; text-align: center; }
+.cat-icon { font-size: 24px; margin-bottom: 4px; }
+.cat-name { font-size: 10px; font-weight: 600; color: #1a1a1a; }
+.cat-price { font-size: 9px; color: #666; margin-top: 2px; }
+</style>
+</head>
+<body>
+<div class="proposed-badge">PROPOSED IMPLEMENTATION — ROBO CRAZE</div>
+
+<div class="announcement">
+    <strong>FREE SHIPPING</strong> on orders above Rs. 999 | Same Day Dispatch before 2 PM
+</div>
+
+<div class="header">
+    <div class="logo">robo<span>craze</span></div>
+    <div class="header-icons">🔍 ♡ 🛒</div>
+</div>
+
+<div class="value-strip">
+    <div class="value-item"><span class="value-icon">✓</span> Authorized Reseller</div>
+    <div class="value-item"><span class="value-icon">🚚</span> Same Day Ship</div>
+    <div class="value-item"><span class="value-icon">💳</span> COD Available</div>
+</div>
+
+<div class="hero">
+    <div class="hero-badge">🔥 NEW ARRIVAL</div>
+    <div class="hero-title">Raspberry Pi 5<br>Now Available</div>
+    <div class="hero-subtitle">India's most trusted source for Raspberry Pi, Arduino, Drones & 3D Printers</div>
+    <a class="hero-cta" href="#">Shop Now →</a>
+    <div class="hero-stats">
+        <div class="stat">
+            <div class="stat-num">50K+</div>
+            <div class="stat-label">Happy Makers</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">5,000+</div>
+            <div class="stat-label">Products</div>
+        </div>
+        <div class="stat">
+            <div class="stat-num">4.5★</div>
+            <div class="stat-label">Google Rating</div>
+        </div>
+    </div>
+</div>
+
+<div class="categories">
+    <div class="cat-header">Shop by Category</div>
+    <div class="cat-grid">
+        <div class="cat-item"><div class="cat-icon">🍓</div><div class="cat-name">Raspberry Pi</div><div class="cat-price">from Rs. 349</div></div>
+        <div class="cat-item"><div class="cat-icon">🤖</div><div class="cat-name">Arduino</div><div class="cat-price">from Rs. 199</div></div>
+        <div class="cat-item"><div class="cat-icon">🚁</div><div class="cat-name">Drones</div><div class="cat-price">from Rs. 1,599</div></div>
+        <div class="cat-item"><div class="cat-icon">🖨️</div><div class="cat-name">3D Printers</div><div class="cat-price">from Rs. 299</div></div>
+        <div class="cat-item"><div class="cat-icon">📡</div><div class="cat-name">Sensors</div><div class="cat-price">from Rs. 49</div></div>
+        <div class="cat-item"><div class="cat-icon">🔧</div><div class="cat-name">Tools</div><div class="cat-price">from Rs. 99</div></div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+{
+  "industry": "electronics",
+  "stores_analyzed": 10,
+  "standard_patterns": [
+    {"pattern": "Hero with Product Imagery", "adoption": "10/10", "page": "homepage", "best_example": "Bose — lifestyle hero with person wearing headphones + Save $130 savings callout"},
+    {"pattern": "Category/Product Type Navigation", "adoption": "9/10", "page": "homepage", "best_example": "Croma — full electronics taxonomy across 10+ categories"},
+    {"pattern": "Key Spec Icons/Badges on PDP", "adoption": "9/10", "page": "pdp", "best_example": "boAt — spec icons (50H playtime, 13mm drivers, ENx Mic, BT 5.3) as scannable strip"},
+    {"pattern": "Announcement Bar with Offer/Promo", "adoption": "9/10", "page": "homepage", "best_example": "Sonos — benefit-first announcement: Now playing any song in every room"},
+    {"pattern": "Color/Variant Swatches", "adoption": "8/10", "page": "pdp", "best_example": "Bose — 7 color swatches including seasonal colors (Twilight Blue, Ice Blue, Sandstone, Pink)"},
+    {"pattern": "Star Ratings + Review Count", "adoption": "8/10", "page": "pdp", "best_example": "Bose — 4.5 stars (1,406 reviews) clearly visible near product title"}
+  ],
+  "growing_patterns": [
+    {"pattern": "Trust Badges Near ATC", "adoption": "7/10", "page": "pdp", "best_example": "boAt — trust strip with delivery/warranty/return icons directly below ATC", "geo_note": "India 5/5, US 2/5 — essential for India market"},
+    {"pattern": "Free Shipping Threshold/Banner", "adoption": "5/10", "page": "homepage", "best_example": "Bose — Free 2-Day Shipping (speed AND free combined)"},
+    {"pattern": "MRP Strikethrough + Discount %", "adoption": "5/10", "page": "pdp", "best_example": "boAt — 71% off display with MRP strikethrough", "geo_note": "India 5/5, US 0/5 — India-specific pattern"},
+    {"pattern": "Discount %/Savings Display", "adoption": "5/10", "page": "pdp", "best_example": "Bose — $229 was $359, Save $130 — three data points (current, was, savings)"}
+  ],
+  "differentiator_patterns": [
+    {"pattern": "EMI/Installment Payments", "adoption": "4/10", "page": "pdp", "best_example": "Croma — full EMI calculator with monthly breakdown + bank offers", "geo_note": "India 4/5, US 0/5 — critical for India electronics above Rs.1000"},
+    {"pattern": "Brand Authority Claims", "adoption": "4/10", "page": "homepage", "best_example": "boAt — #1 Earwear Brand; Anker — The World's NO.1 Mobile Charging Brand"},
+    {"pattern": "Festival/Seasonal Campaign Theming", "adoption": "3/10", "page": "homepage", "best_example": "boAt/Noise/Portronics — Holi Sale with color splash visuals", "geo_note": "India 3/5, US 0/5"},
+    {"pattern": "Lifestyle Photography in Hero", "adoption": "3/10", "page": "homepage", "best_example": "Bose — person actually using the product in lifestyle context", "geo_note": "India 0/5, US 3/5"},
+    {"pattern": "Sticky ATC/Product Navigation", "adoption": "3/10", "page": "pdp", "best_example": "Razer — sticky product nav with Overview/FAQ/Tech Specs + green BUY CTA always visible", "geo_note": "India 0/5, US 3/5"},
+    {"pattern": "Dark/Gaming Aesthetic", "adoption": "3/10", "page": "homepage", "best_example": "Razer — quintessential gaming dark + green accents"},
+    {"pattern": "Immersive Full-Viewport PDP", "adoption": "2/10", "page": "pdp", "best_example": "Nothing — orbital feature cards around central product image"},
+    {"pattern": "Multi-Brand Product Family", "adoption": "2/10", "page": "homepage", "best_example": "Anker — brand family header (ANKER, eufy, soundcore, ANKER SOLIX)"},
+    {"pattern": "Omnichannel / Store Pickup", "adoption": "2/10", "page": "pdp", "best_example": "Croma — delivery/store pickup toggle with 500+ stores across India"},
+    {"pattern": "Loyalty Program on PDP", "adoption": "2/10", "page": "pdp", "best_example": "Noise — NoiseCash points shown on PDP; Razer — gamified Razer Silver/Gold"},
+    {"pattern": "3D Model / Interactive Viewer", "adoption": "1/10", "page": "pdp", "best_example": "Anker — 3D Model tab on PDP, rotate and explore product"},
+    {"pattern": "Auto-Applied Coupon with Countdown", "adoption": "1/10", "page": "pdp", "best_example": "Anker — Save $10 auto-applied coupon with Ends in 1 Day countdown"},
+    {"pattern": "Protection/Warranty Plan Add-on", "adoption": "1/10", "page": "pdp", "best_example": "Bose — BoseCare Protection Plan option on PDP"}
+  ],
+  "anti_patterns": [
+    {"pattern": "Excessive MRP inflation (71-85% discounts)", "impact": "Erodes trust with savvy buyers — keep discount under 50% for credibility"},
+    {"pattern": "Hamburger-only navigation hiding categories", "impact": "Nothing uses hamburger-only — acceptable only for ultra-minimal design-forward brands, harmful for mainstream stores"},
+    {"pattern": "Immersive PDP sacrificing conversion patterns", "impact": "Hides pricing, reviews, and traditional CTA elements — only works for brands with cult following"},
+    {"pattern": "Subscription model for electronics", "impact": "0% adoption — electronics are purchase items, not replenishment. Subscription feels forced in this category"},
+    {"pattern": "Skipping reviews/ratings entirely", "impact": "Nothing and Razer skip reviews — only viable with extremely strong brand positioning, harmful for most stores"}
+  ],
+  "unique_innovations": [
+    "Nothing's Orbital PDP — feature cards orbiting central product image",
+    "Anker's Auto-Applied Countdown Coupon — pre-applied discount with live countdown",
+    "Anker's 3D Model Viewer — interactive 3D product exploration",
+    "Sonos Build Your System — ecosystem sell encouraging multi-product purchases",
+    "Razer Silver Giveaway — gamified loyalty with gaming-native retention",
+    "Bose's 7-Color Seasonal Palette — seasonal color drops drive freshness",
+    "Croma's Multi-Layer Pricing — MRP > Sale > Bank offer > Exchange = maximum savings visibility",
+    "boAt's Spec Icon Strip — 50H, 13mm, ENx, BT5.3 in visual icon row"
+  ],
+  "india_specific_must_haves": [
+    "MRP strikethrough pricing with % off",
+    "EMI/Snapmint option for products Rs.999+",
+    "Trust badges near ATC (warranty, genuine, returns)",
+    "Key spec icons (battery, Bluetooth, driver, ANC)",
+    "Star ratings + high review count",
+    "Festival-themed campaigns aligned to cultural calendar",
+    "Color/variant swatches with visual preview",
+    "Free shipping threshold",
+    "Bank-specific discount codes (HDFC, ICICI)",
+    "WhatsApp chat support widget"
+  ],
+  "funnel_benchmarks": {
+    "cvr": {"p25": "0.09%", "p50": "0.15%", "p75": "0.32%", "p90": "0.51%"},
+    "aov": {"p25": "5181", "p50": "6282", "p75": "7227", "p90": "8062", "currency": "INR"},
+    "atc_rate": {"p25": "6.42%", "p50": "11.95%", "p75": "20.27%", "p90": "33.31%"},
+    "cart_to_checkout": {"p25": "22.8%", "p50": "29.8%", "p75": "40.5%", "p90": "52.5%"},
+    "checkout_completion": {"p25": "12.3%", "p50": "20.7%", "p75": "32.1%", "p90": "46.9%"},
+    "pdp_view_rate": {"p25": "60.4%", "p50": "89.6%", "p75": "115.9%", "p90": "143.0%"},
+    "engagement_rate": {"p25": "52.1%", "p50": "63.5%", "p75": "75.7%", "p90": "87.8%"},
+    "pages_per_session": {"p25": "1.9", "p50": "2.7", "p75": "3.7", "p90": "4.3"},
+    "mobile_traffic": {"p25": "62%", "p50": "82%", "p75": "93%", "p90": "95%"},
+    "india_cvr_p50": "0.58%",
+    "india_mobile_cvr_p50": "0.53%",
+    "india_desktop_cvr_p50": "0.89%",
+    "india_engagement_rate_p50": "67.6%",
+    "india_pages_per_session_p50": "2.6",
+    "india_atc_rate_p50": "7.85%",
+    "india_cart_to_checkout_p50": "30.8%",
+    "india_checkout_completion_p50": "21.7%",
+    "india_mobile_traffic_p50": "89%"
+  },
+  "quick_reference_thresholds": {
+    "engagement_rate": {"good": ">76%", "average": "52-76%", "poor": "<52%"},
+    "pages_per_session": {"good": ">3.7", "average": "1.9-3.7", "poor": "<1.9"},
+    "atc_rate": {"good": ">20%", "average": "6-20%", "poor": "<6%"},
+    "cart_to_checkout": {"good": ">41%", "average": "23-41%", "poor": "<23%"},
+    "checkout_completion": {"good": ">32%", "average": "12-32%", "poor": "<12%"},
+    "mobile_cvr_vs_desktop": {"good": ">70% of desktop", "average": "50-70%", "poor": "<50%"},
+    "page_load_time_mobile": {"good": "<2s", "average": "2-4s", "poor": ">4s"},
+    "returning_customer_rate": {"good": ">30%", "average": "15-30%", "poor": "<15%"}
+  }
+}

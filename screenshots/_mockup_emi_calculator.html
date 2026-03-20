@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=375, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; width: 375px; }
+.proposed-badge { background: #0066cc; color: #fff; text-align: center; padding: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; }
+.emi-section { margin: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 10px; background: #fafafa; }
+.emi-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+.emi-icon { font-size: 20px; }
+.emi-title { font-size: 14px; font-weight: 700; color: #1a1a1a; }
+.emi-subtitle { font-size: 11px; color: #666; }
+.emi-options { display: flex; gap: 8px; margin-bottom: 14px; }
+.emi-option { flex: 1; padding: 10px 8px; border: 2px solid #e0e0e0; border-radius: 8px; text-align: center; cursor: pointer; }
+.emi-option.selected { border-color: #0066cc; background: #e8f4ff; }
+.emi-months { font-size: 16px; font-weight: 700; color: #1a1a1a; }
+.emi-amount { font-size: 12px; color: #0066cc; font-weight: 600; margin-top: 2px; }
+.emi-detail { font-size: 10px; color: #999; margin-top: 2px; }
+.emi-banks { margin-top: 12px; padding-top: 12px; border-top: 1px solid #e8e8e8; }
+.emi-banks-title { font-size: 11px; font-weight: 600; color: #666; margin-bottom: 8px; }
+.bank-logos { display: flex; gap: 12px; align-items: center; }
+.bank-logo { width: 40px; height: 24px; background: #f0f0f0; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 8px; font-weight: 700; color: #444; }
+.no-cost-badge { background: #e8f5e9; color: #2e7d32; font-size: 10px; padding: 2px 6px; border-radius: 3px; font-weight: 600; display: inline-block; margin-left: 4px; }
+.bnpl-section { margin: 0 16px 16px; padding: 12px 16px; border: 1px solid #e0e0e0; border-radius: 10px; display: flex; align-items: center; gap: 12px; }
+.bnpl-logo { width: 60px; height: 28px; background: #6C4AB6; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 10px; font-weight: 700; }
+.bnpl-text { flex: 1; }
+.bnpl-title { font-size: 12px; font-weight: 600; color: #1a1a1a; }
+.bnpl-desc { font-size: 10px; color: #666; margin-top: 2px; }
+.price-section { padding: 16px; }
+.price-old { font-size: 14px; color: #999; text-decoration: line-through; }
+.price-new { font-size: 22px; font-weight: 700; color: #e53935; margin-left: 6px; }
+</style>
+</head>
+<body>
+<div class="proposed-badge">PROPOSED IMPLEMENTATION — ROBO CRAZE</div>
+
+<div class="price-section">
+    <span class="price-old">Rs. 14,499</span>
+    <span class="price-new">Rs. 12,856</span>
+</div>
+
+<div class="emi-section">
+    <div class="emi-header">
+        <span class="emi-icon">💳</span>
+        <div>
+            <div class="emi-title">EMI Available <span class="no-cost-badge">No Cost EMI</span></div>
+            <div class="emi-subtitle">Starting from Rs. 1,072/month</div>
+        </div>
+    </div>
+    <div class="emi-options">
+        <div class="emi-option">
+            <div class="emi-months">3</div>
+            <div class="emi-amount">Rs. 4,285/mo</div>
+            <div class="emi-detail">No cost</div>
+        </div>
+        <div class="emi-option selected">
+            <div class="emi-months">6</div>
+            <div class="emi-amount">Rs. 2,143/mo</div>
+            <div class="emi-detail">No cost</div>
+        </div>
+        <div class="emi-option">
+            <div class="emi-months">9</div>
+            <div class="emi-amount">Rs. 1,508/mo</div>
+            <div class="emi-detail">@ 12% p.a.</div>
+        </div>
+        <div class="emi-option">
+            <div class="emi-months">12</div>
+            <div class="emi-amount">Rs. 1,145/mo</div>
+            <div class="emi-detail">@ 14% p.a.</div>
+        </div>
+    </div>
+    <div class="emi-banks">
+        <div class="emi-banks-title">Available on all major banks</div>
+        <div class="bank-logos">
+            <div class="bank-logo">HDFC</div>
+            <div class="bank-logo">ICICI</div>
+            <div class="bank-logo">SBI</div>
+            <div class="bank-logo">AXIS</div>
+            <div class="bank-logo">KOTAK</div>
+            <div class="bank-logo">+5</div>
+        </div>
+    </div>
+</div>
+
+<div class="bnpl-section">
+    <div class="bnpl-logo">Simpl</div>
+    <div class="bnpl-text">
+        <div class="bnpl-title">Pay in 3 interest-free parts</div>
+        <div class="bnpl-desc">3 × Rs. 4,285 — No extra charges</div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+{
+  "client": {
+    "url": "robocraze.com",
+    "mobile": {
+      "score": 16,
+      "score_class": "poor",
+      "lcp": "7.3s",
+      "lcp_class": "poor",
+      "lcp_status": "fail",
+      "fcp": "4.4s",
+      "fcp_class": "poor",
+      "fcp_status": "fail",
+      "tbt": "980ms",
+      "tbt_class": "poor",
+      "tbt_status": "fail",
+      "cls": "0.00",
+      "cls_class": "good",
+      "cls_status": "pass",
+      "si": "6.3s"
+    },
+    "desktop": {
+      "score": 73,
+      "score_class": "moderate",
+      "lcp": "3.0s",
+      "fcp": "2.5s",
+      "tbt": "350ms",
+      "cls": "0.03",
+      "si": "2.5s"
+    },
+    "crux": {
+      "lcp": "3.2s",
+      "lcp_class": "moderate",
+      "lcp_status": "needs-improvement",
+      "fcp": "2.5s",
+      "fcp_class": "moderate",
+      "fcp_status": "needs-improvement",
+      "inp": "387ms",
+      "inp_class": "moderate",
+      "inp_status": "needs-improvement",
+      "cls": "0.00",
+      "cls_class": "good",
+      "cls_status": "pass",
+      "overall_category": "AVERAGE"
+    }
+  },
+  "competitors": [
+    {
+      "name": "ThinkRobotics",
+      "url": "thinkrobotics.com",
+      "mobile": {
+        "score": 0,
+        "score_class": "poor",
+        "lcp": "27.9s",
+        "cls": "0.21",
+        "tbt": "1,860ms"
+      },
+      "desktop": {
+        "score": 0,
+        "score_class": "poor"
+      }
+    },
+    {
+      "name": "The Pi Hut",
+      "url": "thepihut.com",
+      "mobile": {
+        "score": 71,
+        "score_class": "moderate",
+        "lcp": "1.2s",
+        "cls": "0.00",
+        "tbt": "310ms"
+      },
+      "desktop": {
+        "score": 51,
+        "score_class": "moderate"
+      }
+    },
+    {
+      "name": "Pimoroni",
+      "url": "shop.pimoroni.com",
+      "mobile": {
+        "score": 86,
+        "score_class": "moderate",
+        "lcp": "3.0s",
+        "cls": "0.00",
+        "tbt": "160ms"
+      },
+      "desktop": {
+        "score": 85,
+        "score_class": "moderate"
+      }
+    }
+  ],
+  "competition_table_html": "<tr class=\"client-row\"><td>Robo Craze</td><td class=\"score-cell-poor\">16</td><td class=\"score-cell-moderate\">73</td><td>7.3s</td><td>0.00</td><td>980ms</td></tr>\n<tr><td>ThinkRobotics</td><td class=\"score-cell-poor\">0</td><td class=\"score-cell-poor\">0</td><td>27.9s</td><td>0.21</td><td>1,860ms</td></tr>\n<tr><td>The Pi Hut</td><td class=\"score-cell-moderate\">71</td><td class=\"score-cell-moderate\">51</td><td>1.2s</td><td>0.00</td><td>310ms</td></tr>\n<tr><td>Pimoroni</td><td class=\"score-cell-moderate\">86</td><td class=\"score-cell-moderate\">85</td><td>3.0s</td><td>0.00</td><td>160ms</td></tr>",
+  "cwv_summary": {
+    "pass_count": 1,
+    "total": 5,
+    "class": "poor",
+    "icon": "exclamation-triangle"
+  },
+  "verdict": "Robocraze scores 16/100 on mobile — worst among competitors except ThinkRobotics (0). International competitors The Pi Hut (71) and Pimoroni (86) dramatically outperform. LCP of 7.3s and TBT of 980ms are critical bottlenecks; only CLS passes at 0.00.",
+  "narrative": "Robocraze's mobile performance score of 16/100 signals severe speed issues that directly impact conversions — Google research shows 53% of mobile users abandon sites taking over 3 seconds to load, and Robocraze's LCP hits 7.3 seconds. While CLS is excellent at near-zero, the 980ms Total Blocking Time means the page feels frozen during interaction. International competitors like Pimoroni (86/100) and The Pi Hut (71/100) demonstrate that electronics stores can achieve strong mobile performance with proper optimization."
+}

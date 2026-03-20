@@ -1,0 +1,134 @@
+{
+  "similarweb": {
+    "data_period": "February 2026",
+    "total_visits": "750K",
+    "bounce_rate": "40.89%",
+    "pages_per_visit": "3.19",
+    "avg_duration": "00:02:36",
+    "last_month_change": "+9.16%",
+    "device_split": {
+      "mobile": "Not available (free SimilarWeb)",
+      "desktop": "Not available (free SimilarWeb)"
+    },
+    "traffic_sources": [
+      {"channel": "Paid Search", "percent": "34.69%", "rank": 1},
+      {"channel": "Organic Search", "percent": "Not shown (2nd place)", "rank": 2},
+      {"channel": "Direct", "percent": "Not shown (3rd place)", "rank": 3}
+    ],
+    "traffic_sources_note": "SimilarWeb free only shows exact percentage for #1 channel. Top 3 channels shown; remaining channels (Social, Referral, Display, Mail) behind paywall. Mail noted as most underutilized channel.",
+    "organic_vs_paid_keywords": {
+      "organic": "51.02%",
+      "paid": "48.98%"
+    },
+    "top_countries": [
+      "India 83.24%",
+      "United States 1.46%",
+      "Nigeria 0.99%",
+      "Philippines 0.66%",
+      "Cambodia 0.56%",
+      "Others 13.09%"
+    ],
+    "social_media_breakdown": [
+      {"network": "YouTube", "percent": "59.34%"},
+      {"network": "Facebook", "percent": "14.8%"},
+      {"network": "LinkedIn", "percent": "9.64%"},
+      {"network": "Reddit", "percent": "7.17%"},
+      {"network": "Instagram", "percent": "5.09%"},
+      {"network": "Others", "percent": "3.96%"}
+    ],
+    "referral_category_breakdown": [
+      {"category": "Ecommerce and Shopping - Other", "percent": "71.05%"},
+      {"category": "AI Chatbots and Tools", "percent": "24.27%"},
+      {"category": "Computer Hardware", "percent": "2.43%"},
+      {"category": "News & Media Publishers", "percent": "0.82%"},
+      {"category": "Computers Electronics and Technology - Other", "percent": "0.72%"},
+      {"category": "Other", "percent": "0.72%"}
+    ],
+    "rankings": {
+      "global_rank": "#62,329",
+      "country_rank_india": "#4,724",
+      "category_rank": "#162 (Computers Electronics and Technology - Other, India)"
+    },
+    "demographics": {
+      "gender": {"male": "76.98%", "female": "23.02%"},
+      "age_distribution": {
+        "18-24": "34.24%",
+        "25-34": "24.56%",
+        "35-44": "13.6%",
+        "45-54": "13.15%",
+        "55-64": "8.09%",
+        "65+": "6.37%"
+      }
+    },
+    "top_competitors": [
+      "robu.in (100% affinity)",
+      "quartzcomponents.com (92%)",
+      "flyrobo.in (90%)",
+      "thinkrobotics.com (88%)",
+      "evelta.com (86%)",
+      "digikey.in (85%)",
+      "robokits.co.in (83%)",
+      "makerbazar.in (80%)",
+      "probots.co.in (79%)",
+      "thingbits.in (78%)"
+    ]
+  },
+  "proxy_signals": {
+    "product_count": "4,125",
+    "product_count_source": "/collections/all pagination: 'Showing 1-20 of 4125'",
+    "review_count": "Active (42–90 per product)",
+    "review_source": "Judge.me (Shopify extension)",
+    "review_details": [
+      {"product": "HC-SR04 Ultrasonic Sensor", "reviews": 42, "rating": "4.67/5"},
+      {"product": "Arduino UNO R3 SMD ATmega328 Compatible Board", "reviews": 90, "rating": "4.77/5"},
+      {"product": "3-In-1 ACEBOTT ESP32 STEM School Smart Home Education Kit", "reviews": 29, "rating": "4.59/5"}
+    ],
+    "instagram_followers": "39,204",
+    "instagram_handle": "@robocraze",
+    "instagram_posts": "1,281",
+    "instagram_engagement_rate": "1.2%",
+    "instagram_source": "SocialBlade (as of Feb 21, 2026)",
+    "instagram_growth": "+1,369 followers in 14 days (~98/day avg)",
+    "app_count": 15,
+    "apps_detected": {
+      "shopify_extensions": [
+        "Wishlist Hero",
+        "Bitespeed Popups",
+        "Event Promotion Bar",
+        "Tydal Popups / Email Pop-ups",
+        "Globo Also Bought / Cross-Sell",
+        "Judge.me (Reviews)",
+        "Form Builder by HulkApps"
+      ],
+      "third_party_integrations": [
+        "Microsoft Clarity (heatmaps)",
+        "Google Analytics",
+        "Google Tag Manager",
+        "Bing Ads",
+        "Facebook Pixel",
+        "GoKwik (checkout optimization)",
+        "WhatsApp Chat widget",
+        "Clickpost (order tracking)"
+      ]
+    },
+    "blog_posts": "840+ (84 pages x ~10 posts/page)",
+    "blog_frequency": "Multiple posts per day (latest: Mar 18, 2026)",
+    "blog_topics": "Arduino tutorials, sensor guides, STEM education, robotics projects, 3D printing, IoT",
+    "additional_signals": {
+      "whatsapp_support": "Yes (wa.me/918123057137)",
+      "mobile_app": "Yes (Download App link in footer)",
+      "b2b_bulk_orders": "Yes (dedicated B2B page)",
+      "gst_invoices": "Yes",
+      "cod_available": "Rs.500-3000 range",
+      "free_shipping_threshold": "Rs.999",
+      "reward_program": "Yes",
+      "wishlist": "Yes (Wishlist Hero app)",
+      "payment_methods": ["Visa", "Mastercard", "Apple Pay", "Google Pay"],
+      "social_profiles": ["Facebook", "Instagram", "Pinterest", "YouTube", "Twitter"]
+    },
+    "tier": "Tier 4: Enterprise",
+    "tier_sessions": "200K+",
+    "estimated_revenue": null
+  },
+  "tier_narrative": "Robocraze is a Tier 4 (Enterprise) electronics and robotics e-commerce store with approximately 750K monthly visits as of February 2026, up 9.16% month-over-month. The brand dominates India's niche electronics/robotics market, ranking #162 in its SimilarWeb category and #4,724 overall in India. With 4,125 active products, 39K+ Instagram followers growing at ~100/day, and a prolific content operation (840+ blog posts), this is a mature, high-traffic operation. Notably, paid search is the #1 traffic driver at 34.69%, with organic search in 2nd place — suggesting significant ad spend and strong SEO. The audience skews heavily male (77%) and young (34% aged 18-24), consistent with the DIY electronics/STEM hobbyist demographic. The 83% India traffic concentration with emerging markets (Nigeria, Philippines, Cambodia) suggests growing international demand. The relatively low bounce rate (40.89%) and strong pages/visit (3.19) indicate engaged visitors — typical for niche electronics buyers who research before purchasing."
+}

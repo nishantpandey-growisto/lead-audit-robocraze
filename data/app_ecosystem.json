@@ -1,0 +1,114 @@
+{
+  "present_apps": [
+    {
+      "name": "Judge.me Product Reviews",
+      "category": "Reviews & Social Proof",
+      "quality": "good",
+      "notes": "Reviews widget active on PDP (29 reviews on Raspberry Pi 4, 33 on Pi 5). Floating review popup on every page. Star ratings NOT displayed on collection/homepage product cards — a missed configuration, not a missing feature."
+    },
+    {
+      "name": "GoKwik Checkout",
+      "category": "Checkout Optimization",
+      "quality": "warning",
+      "notes": "GoKwik checkout detected via script references and 'BUY IT NOW' button behavior. Creates dual checkout paths (ATC to cart drawer vs Buy Now to GoKwik). GoKwik is in the site's script blocklist (MS_BL) for performance optimization — may cause race conditions with other scripts."
+    },
+    {
+      "name": "Bitespeed WhatsApp Marketing",
+      "category": "Marketing & Communication",
+      "quality": "warning",
+      "notes": "Bitespeed provides: WhatsApp chat widget (bottom-right), Spin-to-Win popup for lead capture, and WhatsApp marketing automation. The aggressive full-screen popup on first visit is a UX concern — should be delayed or made less intrusive."
+    },
+    {
+      "name": "Microsoft Clarity",
+      "category": "Analytics & Heatmaps",
+      "quality": "good",
+      "notes": "Clarity script active (clarity.ms) — provides free session recordings and heatmaps. Excellent for understanding user behavior without PageSpeed penalty."
+    },
+    {
+      "name": "Google Analytics 4 (GA4)",
+      "category": "Analytics",
+      "quality": "good",
+      "notes": "GA4 property G-GLD3MKG14V active with enhanced measurement. Tracking page views, events, and e-commerce conversions."
+    },
+    {
+      "name": "Google Tag Manager (GTM)",
+      "category": "Tag Management",
+      "quality": "good",
+      "notes": "GTM container GTM-P2P8SXQ active — managing tag deployment for analytics and marketing pixels."
+    },
+    {
+      "name": "Facebook Pixel",
+      "category": "Ad Tracking",
+      "quality": "good",
+      "notes": "Facebook Pixel detected via fbq initialization — tracking page views, add to cart, and purchase events for Meta ad optimization."
+    },
+    {
+      "name": "Wishlist Feature (Theme-built)",
+      "category": "User Engagement",
+      "quality": "good",
+      "notes": "Wishlist functionality available via heart icon in header and 'ADD TO WISHLIST' button on PDP — appears to be theme-built (Ella) rather than a third-party app."
+    }
+  ],
+  "missing_apps": [
+    {
+      "name": "EMI/BNPL Payment Display (Snapmint or Simpl)",
+      "category": "Payment Flexibility",
+      "priority": "critical",
+      "impact_type": "conversion",
+      "impact_label": "CVR +15-20% on products above Rs. 1,000",
+      "benchmark": "Present on 4/5 top Indian electronics stores (Croma, boAt, Noise, Portronics)"
+    },
+    {
+      "name": "Product Filter & Search App (Boost Commerce or Algolia)",
+      "category": "Product Discovery",
+      "priority": "critical",
+      "impact_type": "conversion",
+      "impact_label": "PDP view rate +20-30%",
+      "benchmark": "Present on 9/10 electronics stores with 1000+ SKUs"
+    },
+    {
+      "name": "Product Comparison Tool",
+      "category": "Decision Support",
+      "priority": "recommended",
+      "impact_type": "conversion",
+      "impact_label": "CVR +8-12% for spec-comparison shoppers",
+      "benchmark": "Present on 4/10 electronics stores — critical for component retailers"
+    },
+    {
+      "name": "Email/SMS Marketing (Klaviyo or Omnisend)",
+      "category": "Customer Retention",
+      "priority": "critical",
+      "impact_type": "revenue",
+      "impact_label": "Revenue +15-25% from automated flows",
+      "benchmark": "Present on 8/10 top D2C stores — no email marketing tool detected"
+    },
+    {
+      "name": "Loyalty/Rewards Program (Smile.io or Rivo)",
+      "category": "Customer Retention",
+      "priority": "recommended",
+      "impact_type": "retention",
+      "impact_label": "Repeat rate +15-25%",
+      "benchmark": "Robo Craze mentions 'Earn RC Coins' — but no loyalty app detected to manage this program. Rivo reference found in CSS but may not be active."
+    },
+    {
+      "name": "Shipping & Tracking (Shiprocket + Aftership)",
+      "category": "Post-Purchase Experience",
+      "priority": "recommended",
+      "impact_type": "experience",
+      "impact_label": "Support tickets -30%, repeat rate +10%",
+      "benchmark": "Present on 7/10 Indian D2C stores — no shipping tracking widget detected"
+    },
+    {
+      "name": "Back-in-Stock Notification App",
+      "category": "Revenue Recovery",
+      "priority": "recommended",
+      "impact_type": "revenue",
+      "impact_label": "Recover 5-10% of lost sales from OOS products",
+      "benchmark": "Raspberry Pi 5 8GB is sold out with only an email 'Notify Me' field — a dedicated back-in-stock app with SMS + WhatsApp notifications would improve recovery rate"
+    }
+  ],
+  "present_count": 8,
+  "missing_count": 7,
+  "benchmark_context": "Top Indian electronics stores in our benchmark average 10-15 purpose-built apps covering: reviews, EMI, advanced search, comparison tools, email marketing, loyalty, and shipping automation. Robo Craze has 8 apps with good analytics coverage but critical gaps in payment flexibility (no EMI/BNPL), product discovery (no advanced filters), and customer retention (no email marketing or active loyalty program).",
+  "narrative": "Robo Craze has a lean app stack of 8 tools covering reviews (Judge.me), checkout (GoKwik), communication (Bitespeed WhatsApp), and analytics (GA4 + GTM + Clarity + Facebook Pixel). The analytics layer is well-configured with both quantitative (GA4) and qualitative (Clarity) tools. However, three critical gaps exist: (1) No EMI/BNPL for a store selling products up to Rs. 4+ lakhs — this is table stakes for Indian electronics, (2) No email/SMS marketing tool for abandoned cart recovery, post-purchase flows, or back-in-stock notifications, (3) No advanced product filtering for a catalog of 5,000+ technical products. The 'RC Coins' loyalty program mentioned in trust badges has no visible loyalty app backing it — this could be a missed promise to customers. The Bitespeed popup aggressiveness should be toned down, and Judge.me star ratings should be surfaced on collection pages."
+}

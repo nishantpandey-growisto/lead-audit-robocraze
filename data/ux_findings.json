@@ -1,0 +1,443 @@
+{
+  "findings": {
+    "homepage": [
+      {
+        "id": "hp_f1",
+        "title": "Hero promotes app download instead of products/offers",
+        "header": "A product-focused hero with clear CTA can increase homepage engagement by 20-30% — Robo Craze's hero promotes app download instead of showcasing products or offers",
+        "severity": "critical",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/hp_f1_client.jpeg",
+        "client_label": "Robo Craze — Mobile Homepage",
+        "benchmark_screenshot": "screenshots/mockup_homepage_value_prop.jpeg",
+        "benchmark_label": "PROPOSED IMPLEMENTATION",
+        "observations": [
+          "The hero carousel rotates between slides promoting app download ('Redeem RC Coins on the App'), coding kits, and Raspberry Pi — none lead with a compelling product offer or value proposition",
+          "The first fold is dominated by two persistent banners: 'Download our App' sticky bar and 'Save more when you Buy more' announcement — together consuming ~120px of precious mobile real estate",
+          "No trust signals visible above the fold — India's electronics buyers need reassurance about authorized products, warranty, and genuine components before browsing",
+          "Competitor ThinkRobotics leads with product imagery and 'Explore Products' CTA, while The Pi Hut shows product range with '8,300+ products' badge immediately"
+        ],
+        "recommendations": [
+          "Replace app-download hero with a product-focused hero: lead product (e.g., Raspberry Pi 5), headline emphasizing 'India's #1 Robotics Store', and a clear 'Shop Now' CTA",
+          "Add a trust/value strip below header: 'Authorized Reseller | Same Day Shipping | COD Available | 50K+ Makers Trust Us' — converts browsing visitors to buyers",
+          "Move app download promotion to a less prominent position (footer, post-purchase, or in-cart upsell)"
+        ],
+        "benchmark_tag": "Standard — 10/10 electronics stores lead with product imagery in hero"
+      },
+      {
+        "id": "hp_f2",
+        "title": "Spin-to-win popup blocks content on first visit",
+        "header": "Aggressive popups on first visit increase bounce rate by 10-15% — Robo Craze shows a full-screen spin wheel immediately on mobile",
+        "severity": "important",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/hp_f2_client.jpeg",
+        "client_label": "Robo Craze — Mobile Popup",
+        "benchmark_screenshot": "screenshots/bench_hp_pihut.jpeg",
+        "benchmark_label": "The Pi Hut — Mobile (No Popup)",
+        "observations": [
+          "A full-screen 'Spin to Win' popup from Bitespeed appears within 3-5 seconds of landing, completely blocking the homepage content",
+          "The popup requires phone number (+91) and email before any interaction — high-friction data capture on first visit when user hasn't seen any products yet",
+          "The Pi Hut and Pimoroni show zero popups on first visit, letting users browse products immediately — popup-free first impressions build trust in electronics retail",
+          "Google's Page Experience guidelines penalize sites with intrusive interstitials, especially on mobile — this directly impacts search rankings"
+        ],
+        "recommendations": [
+          "Delay popup by 60+ seconds or trigger on exit-intent only — let users discover products first before asking for contact info",
+          "Replace full-screen spin wheel with a subtle bottom banner offering 5% off on first order — less intrusive, same capture goal",
+          "Show the popup only to returning visitors who haven't purchased — first-time visitors need product discovery, not gamification"
+        ],
+        "benchmark_tag": "Growing — 3/10 electronics stores use gamified popups; 7/10 use no or minimal popups"
+      },
+      {
+        "id": "hp_f3",
+        "title": "Broken collection sections on homepage",
+        "header": "Empty product sections destroy homepage credibility — Robo Craze shows 'Sorry, there are no products in this collection' for multiple homepage sections",
+        "severity": "critical",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/hp_f5_client.jpeg",
+        "client_label": "Robo Craze — Mobile Homepage (Broken Sections)",
+        "benchmark_screenshot": "screenshots/bench_hp_thinkrobotics_scroll.jpeg",
+        "benchmark_label": "ThinkRobotics — Mobile Homepage",
+        "observations": [
+          "Both 'STEM Kits' and 'Tools & Instruments' sections on the homepage display 'Sorry, there are no products in this collection' — visible to every visitor scrolling through",
+          "These broken sections suggest either misconfigured collection handles, empty collections, or sync issues between theme sections and Shopify collections",
+          "Two consecutive broken sections create a perception that the store is poorly maintained or has inventory issues — critical for a technical/electronics retailer where trust is paramount",
+          "ThinkRobotics and The Pi Hut curate homepage sections with hand-picked products, ensuring every section is populated and drives clicks"
+        ],
+        "recommendations": [
+          "Immediately fix the collection handles for STEM Kits and Tools & Instruments sections — verify the collection slugs match the theme section configuration",
+          "Implement conditional rendering: if a collection has 0 products, hide the entire section automatically instead of showing an error message",
+          "Regularly audit homepage sections monthly to catch empty collections before they impact customer experience"
+        ],
+        "benchmark_tag": "Standard — 10/10 stores have fully populated homepage sections"
+      },
+      {
+        "id": "hp_f4",
+        "title": "No star ratings or social proof on homepage product cards",
+        "header": "Displaying review ratings on product cards increases click-through by 15-20% — Robo Craze's homepage products show no star ratings",
+        "severity": "important",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/hp_f4_client.jpeg",
+        "client_label": "Robo Craze — Mobile Homepage Products",
+        "benchmark_screenshot": "screenshots/bench_pdp_pihut_rpi5_scroll2.jpeg",
+        "benchmark_label": "The Pi Hut — Product Cards with Ratings",
+        "observations": [
+          "Homepage product cards show product name, MRP strikethrough, sale price, and savings amount — but no star ratings or review counts despite Judge.me being installed",
+          "The Pi Hut displays star ratings and review counts (e.g., '572 Reviews') directly on product cards, helping users make faster decisions and building trust",
+          "For electronics/components where products look similar in thumbnails, star ratings become a key differentiator that helps users identify popular and trusted products",
+          "Judge.me is already installed on Robo Craze — the star ratings just need to be surfaced on collection/homepage product cards"
+        ],
+        "recommendations": [
+          "Enable Judge.me star rating badges on all product card templates — this is typically a theme setting or snippet addition, not a new app installation",
+          "Show both star rating and review count (e.g., '4.5★ (29)') to combine social proof with specificity — bare stars without count look less credible"
+        ],
+        "benchmark_tag": "Standard — 8/10 electronics stores show ratings on product cards"
+      },
+      {
+        "id": "hp_f5",
+        "title": "Product images slow to load in homepage grid",
+        "header": "Slow-loading product images increase homepage bounce rate — several category and product thumbnails on Robo Craze's homepage render as blank placeholders",
+        "severity": "important",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/hp_f4_client.jpeg",
+        "client_label": "Robo Craze — Mobile Homepage (Slow Images)",
+        "benchmark_screenshot": "screenshots/bench_col_pihut.jpeg",
+        "benchmark_label": "The Pi Hut — Fast-Loading Collection",
+        "observations": [
+          "Multiple product thumbnails in the homepage grid render as blank/empty containers before images load — visible during scroll on both mobile and desktop",
+          "The product grid section for 3D Printers and featured products shows images that fail to load or load with significant delay, creating empty white boxes",
+          "The Pi Hut's collection pages load product images instantly with proper lazy-loading and optimized image sizes for each viewport breakpoint",
+          "Slow image loading in the electronics category is especially damaging because product differentiation relies heavily on visual identification of components"
+        ],
+        "recommendations": [
+          "Implement proper lazy-loading with low-quality image placeholders (LQIP) — show a blurred thumbnail while the full image loads to eliminate blank containers",
+          "Optimize all product images to WebP format at appropriate sizes: 300px for mobile cards, 600px for desktop cards — Shopify CDN supports automatic WebP conversion"
+        ],
+        "benchmark_tag": "Standard — 9/10 stores have instantly-loading product images"
+      }
+    ],
+    "collection": [
+      {
+        "id": "col_f1",
+        "title": "No star ratings on collection product cards",
+        "header": "Star ratings on collection pages can boost product click-through rates by 15-25% — Robo Craze's collection cards show no ratings despite having Judge.me installed",
+        "severity": "important",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/col_f1_client.jpeg",
+        "client_label": "Robo Craze — Mobile Collection",
+        "benchmark_screenshot": "screenshots/bench_col_pihut.jpeg",
+        "benchmark_label": "The Pi Hut — Collection with Ratings",
+        "observations": [
+          "Collection page product cards display product name, MRP strikethrough, sale price, savings badge, and ATC button — but zero star ratings or review counts",
+          "The Pi Hut shows star ratings and review counts on every collection product card, helping users quickly identify popular and trusted products",
+          "With 5,000+ products across similar-looking electronic components, star ratings serve as a critical navigation aid — they help users choose between multiple similar options",
+          "Judge.me is installed and reviews exist (29 reviews on Raspberry Pi 4) — the data is available, just not displayed on collection cards"
+        ],
+        "recommendations": [
+          "Enable Judge.me collection badge display — add the jdgm-widget snippet to the product card template in the Ella theme's collection page",
+          "Prioritize products with higher review counts in default sort to showcase social proof and encourage reviews on newer products"
+        ],
+        "benchmark_tag": "Standard — 8/10 electronics stores display ratings on collection product cards"
+      },
+      {
+        "id": "col_f2",
+        "title": "No advanced filtering by specs or price range",
+        "header": "Technical product stores need specification-based filtering — Robo Craze offers only basic category navigation without price range, brand, or spec filters",
+        "severity": "critical",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/col_f1_client.jpeg",
+        "client_label": "Robo Craze — Mobile Collection Filters",
+        "benchmark_screenshot": "screenshots/bench_col_thinkrobotics_all.jpeg",
+        "benchmark_label": "ThinkRobotics — Collection with Filters",
+        "observations": [
+          "The collection page shows a basic 'Filter' button and a left sidebar with category tree navigation only — no price range slider, no brand filter, no specification-based filters",
+          "Electronics buyers frequently filter by: price range (budget vs premium), brand (Raspberry Pi vs Arduino), connectivity (WiFi, Bluetooth), RAM size, processor type — none available",
+          "ThinkRobotics offers sidebar filters with brand, price range, and product attributes that let technical buyers narrow down from hundreds of similar components quickly",
+          "With Robo Craze's catalog of 5,000+ products, basic category navigation forces users into excessive scrolling and page-by-page browsing"
+        ],
+        "recommendations": [
+          "Implement a filter app like Boost Product Filter & Search ($19-39/mo) that supports: price range slider, brand checkboxes, and tag-based specification filters",
+          "Add key specification tags to products (e.g., 'WiFi', 'Bluetooth 5.0', '8GB RAM', '4-Core') and surface them as filterable attributes — critical for technical product discovery"
+        ],
+        "benchmark_tag": "Standard — 9/10 electronics stores offer specification-based filtering"
+      },
+      {
+        "id": "col_f3",
+        "title": "No quick-view modal on collection pages",
+        "header": "Quick-view functionality reduces navigation friction and can increase add-to-cart rate by 10-15% — Robo Craze requires full page navigation for every product",
+        "severity": "opportunity",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/col_f2_client.jpeg",
+        "client_label": "Robo Craze — Mobile Collection (No Quick View)",
+        "benchmark_screenshot": "screenshots/bench_col_thinkrobotics.jpeg",
+        "benchmark_label": "ThinkRobotics — Collection Page",
+        "observations": [
+          "To check product specs or variants, users must navigate away from the collection page to the full PDP — then use the back button to return to browsing",
+          "For component shoppers comparing 5-10 similar items (e.g., different Raspberry Pi models), full page navigation for each creates significant friction",
+          "The Ella theme supports quick-view modals natively — this feature appears to be disabled in Robo Craze's configuration",
+          "A quick-view showing key specs, price, and ATC button lets users compare products without losing their place in the collection"
+        ],
+        "recommendations": [
+          "Enable the Ella theme's built-in quick-view modal — this shows product image, title, price, key details, and ATC button in an overlay without full page navigation",
+          "Ensure the quick-view modal includes the key spec bullet points and variant selector (if applicable) to enable informed decisions without leaving the collection"
+        ],
+        "benchmark_tag": "Growing — 5/10 electronics stores offer quick-view on collection pages"
+      },
+      {
+        "id": "col_f4",
+        "title": "Sale percentage badges dominate product cards",
+        "header": "Overemphasizing discount percentages (11%, 55%, 49%, 62%) over product features can erode brand trust — electronics buyers prioritize specs over deals",
+        "severity": "opportunity",
+        "pattern_type": "differentiator",
+        "client_screenshot": "screenshots/col_f1_client.jpeg",
+        "client_label": "Robo Craze — Mobile Collection Cards",
+        "benchmark_screenshot": "screenshots/bench_pdp_pihut_rpi5.jpeg",
+        "benchmark_label": "The Pi Hut — Clean Product Presentation",
+        "observations": [
+          "Every product card prominently displays a red 'Sale XX%' badge — with percentages ranging from 11% to 62%, making the collection feel like a perpetual clearance sale",
+          "The Pi Hut presents products with clean imagery, star ratings, and clear pricing without aggressive discount badges — building a premium electronics retailer perception",
+          "Electronics buyers are spec-driven, not deal-driven — a '55% off' badge on an HDMI adapter raises questions about product quality rather than creating urgency",
+          "Excessive MRP inflation (55-62% discounts) is flagged as an anti-pattern in electronics benchmarks — it erodes trust with technically savvy buyers"
+        ],
+        "recommendations": [
+          "Replace percentage-based sale badges with value-added badges like 'Bestseller', 'New Arrival', or 'In Stock' — these communicate value without discount dependency",
+          "Keep the savings amount in the price section (Save Rs. 1,643) but remove the prominent % badge from the product card image overlay"
+        ],
+        "benchmark_tag": "Differentiator — 3/10 electronics stores avoid prominent discount percentage badges"
+      }
+    ],
+    "pdp": [
+      {
+        "id": "pdp_f1",
+        "title": "No key spec icons or badges on PDP",
+        "header": "Visual spec icons help electronics buyers make 40% faster purchase decisions — Robo Craze buries technical specs in a wall of text",
+        "severity": "critical",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/pdp_f3_client.jpeg",
+        "client_label": "Robo Craze — Mobile PDP (Text Specs)",
+        "benchmark_screenshot": "screenshots/mockup_spec_icons.jpeg",
+        "benchmark_label": "PROPOSED IMPLEMENTATION",
+        "observations": [
+          "Product specifications are presented as plain bullet points buried below the fold — 'High-Performance Computing: Raspberry Pi 4 Model B with 8GB RAM for efficient and versatile computing'",
+          "Key specs like RAM (8GB), processor speed (1.5GHz), connectivity (WiFi 5, BT 5.0), and ports (USB 3.0, Dual 4K HDMI) are hidden in paragraph text instead of scannable visual icons",
+          "Electronics benchmark leaders like boAt use visual spec strips (e.g., '50H playtime, 13mm drivers, ENx Mic, BT 5.3') as scannable icon rows directly below the product title",
+          "Technical buyers scanning multiple products need instant spec comparison — text paragraphs force them to read entire descriptions to extract basic specifications"
+        ],
+        "recommendations": [
+          "Add a visual spec icon strip below the product title showing 6-8 key specs: RAM, CPU, WiFi, Bluetooth, USB ports, HDMI, GPIO pins — using icons + short labels",
+          "Move detailed descriptions to a 'Full Specifications' tab below the fold, keeping the purchase decision area focused on scannable specs and trust signals"
+        ],
+        "benchmark_tag": "Standard — 9/10 electronics stores show key specs as visual icons"
+      },
+      {
+        "id": "pdp_f2",
+        "title": "No delivery/pincode checker on PDP",
+        "header": "A delivery date estimator with pincode check can boost conversion by 5-8% — Robo Craze shows no delivery timeline or availability check on product pages",
+        "severity": "critical",
+        "pattern_type": "growing",
+        "client_screenshot": null,
+        "client_label": "Robo Craze — Not Present",
+        "benchmark_screenshot": "screenshots/mockup_delivery_checker.jpeg",
+        "benchmark_label": "PROPOSED IMPLEMENTATION",
+        "observations": [
+          "No pincode-based delivery checker is present on the PDP — users cannot check delivery availability, estimated delivery date, or shipping charges before adding to cart",
+          "Robo Craze already mentions 'Same Day Shipping' and 'In-Store Pickup (Bangalore)' in trust badges — but these are generic claims, not personalized to the user's pincode",
+          "For electronics components needed for projects, delivery timeline is a critical purchase factor — a maker with a weekend project needs to know if the part arrives by Saturday",
+          "The store already has in-store pickup capability (Bangalore) — this should be surfaced on the PDP with pincode-based availability, not hidden until the cart page"
+        ],
+        "recommendations": [
+          "Add a pincode-based delivery checker showing: estimated delivery date, express vs standard options, store pickup availability (Bangalore), and COD eligibility for the entered pincode",
+          "Auto-detect returning users' pincode from previous orders or browser geolocation to pre-fill the delivery estimate — reducing friction for repeat buyers"
+        ],
+        "benchmark_tag": "Growing — 7/10 Indian electronics stores show delivery estimates on PDP"
+      },
+      {
+        "id": "pdp_f3",
+        "title": "No EMI/installment option for high-value products",
+        "header": "EMI options can increase conversion by 15-20% on products above Rs. 1,000 — Robo Craze's Rs. 12,856 Raspberry Pi shows no EMI or BNPL option",
+        "severity": "critical",
+        "pattern_type": "differentiator",
+        "client_screenshot": null,
+        "client_label": "Robo Craze — Not Present",
+        "benchmark_screenshot": "screenshots/mockup_emi_calculator.jpeg",
+        "benchmark_label": "PROPOSED IMPLEMENTATION",
+        "observations": [
+          "A Raspberry Pi 4 8GB at Rs. 12,856 and other products like 3D printers (up to Rs. 4,39,999) and drones show no EMI, Snapmint, or BNPL (Buy Now Pay Later) payment options",
+          "Croma, the benchmark leader for Indian electronics, shows a full EMI calculator with monthly breakdowns and bank-specific offers — this is standard for Indian electronics above Rs. 1,000",
+          "For Robo Craze's target audience of students, hobbyists, and educational institutions, EMI makes higher-value products (kits, printers, boards) accessible without full upfront payment",
+          "GoKwik is detected as the checkout provider — Snapmint or Simpl BNPL integration can be added alongside GoKwik for pre-checkout payment visibility"
+        ],
+        "recommendations": [
+          "Integrate Snapmint or Simpl for BNPL/EMI display on PDP — show 'Pay in 3 installments of Rs. X/month' directly below the price for products above Rs. 999",
+          "For high-value items (Rs. 10,000+), show a full EMI calculator with bank-specific no-cost EMI options — this is critical for 3D printers, robotics kits, and premium boards"
+        ],
+        "benchmark_tag": "Differentiator — 4/10 electronics stores show EMI options on PDP (5/5 Indian stores)"
+      },
+      {
+        "id": "pdp_f4",
+        "title": "Promotional banner takes valuable PDP real estate",
+        "header": "PDP space above the fold directly impacts conversion — Robo Craze's 'Savings in Bulk' banner pushes product details below the fold on mobile",
+        "severity": "important",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/pdp_f1_client.jpeg",
+        "client_label": "Robo Craze — Mobile PDP (Banner)",
+        "benchmark_screenshot": "screenshots/bench_pdp_pihut_rpi5.jpeg",
+        "benchmark_label": "The Pi Hut — Clean PDP First Fold",
+        "observations": [
+          "A full-width 'SAVINGS IN BULK — UPTO OFF 30%' banner is displayed at the top of every PDP page, consuming approximately 60px of mobile viewport — pushing product details further below the fold",
+          "Combined with the app download banner (40px) and announcement bar (40px), nearly 140px of the mobile first fold is occupied by non-product promotional content",
+          "The Pi Hut's PDP immediately shows: product image, title, star ratings (1120 reviews), variant selector, price, and ATC button — all within the first fold",
+          "Bulk ordering is a B2B use case relevant to a small percentage of visitors — it should not occupy prime PDP real estate that every visitor sees"
+        ],
+        "recommendations": [
+          "Remove the 'Savings in Bulk' banner from PDP pages — the 'Bulk Order?' section already exists lower on the page with a WhatsApp CTA for B2B buyers",
+          "Consolidate the announcement bar to a single line: 'Free Shipping Above Rs. 999 | Same Day Dispatch' — remove app download from the sticky top bar"
+        ],
+        "benchmark_tag": "Standard — 9/10 electronics stores keep PDP first fold focused on product info"
+      },
+      {
+        "id": "pdp_f5",
+        "title": "Product description is a wall of text without structured tabs",
+        "header": "Tabbed product information improves PDP engagement by 20-30% — Robo Craze presents all product info as unstructured paragraphs",
+        "severity": "important",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/pdp_f6_client.jpeg",
+        "client_label": "Robo Craze — Mobile PDP (Description)",
+        "benchmark_screenshot": "screenshots/bench_pdp_thinkrobotics_2_scroll.jpeg",
+        "benchmark_label": "ThinkRobotics — Product Description",
+        "observations": [
+          "Product description flows as a continuous block: bullet points followed by long paragraphs covering specs, features, compatibility, and use cases — no clear sections or tabs",
+          "The Raspberry Pi 4 PDP has: quick bullet points, a detailed description of 3+ paragraphs, key features list, a 'Note' section, and 'Why Buy' trust section — all in a single scroll",
+          "Technical products benefit from tabbed layouts: 'Overview | Specifications | Documentation | Reviews' — letting users jump to the information they need",
+          "Workshop promotions, course offers, and bulk order CTAs are interspersed with product info, creating a cluttered reading experience"
+        ],
+        "recommendations": [
+          "Implement tabbed product information: Tab 1 (Overview + spec icons), Tab 2 (Full Specifications table), Tab 3 (Documentation/Getting Started links), Tab 4 (Reviews) — the Ella theme supports this natively",
+          "Separate promotional content (workshops, courses, bulk orders) from product technical information — move promotions to a dedicated section below the product tabs"
+        ],
+        "benchmark_tag": "Standard — 8/10 electronics stores use tabbed product descriptions"
+      },
+      {
+        "id": "pdp_f6",
+        "title": "Trust badges placed in sidebar, not near ATC button",
+        "header": "Trust badges placed directly near the ATC button can boost conversion by 5-10% — Robo Craze's trust signals are in a separate sidebar, not where the purchase decision happens",
+        "severity": "important",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/pdp_f5_client.jpeg",
+        "client_label": "Robo Craze — Mobile PDP (Trust Section)",
+        "benchmark_screenshot": "screenshots/bench_pdp_thinkrobotics_2.jpeg",
+        "benchmark_label": "ThinkRobotics — Mobile PDP",
+        "observations": [
+          "Trust badges ('Free shipping above Rs. 999', 'Technical Support', 'Same Day Shipping', 'Earn RC Coins', 'COD Available') are displayed in a 'Why Buy From Robocraze' section far below the ATC button",
+          "On mobile, these trust badges appear only after scrolling past the product description — most users making a purchase decision never scroll that far",
+          "Indian electronics benchmark standard (boAt, Croma) places a compact trust strip with delivery, warranty, and return icons directly below or beside the ATC button",
+          "The 'Raspberry Pi Approved Reseller' badge near the product image is good — but delivery and payment trust signals need to be near the purchase action"
+        ],
+        "recommendations": [
+          "Add a compact trust icon strip directly below the ATC button: Free Shipping | Authorized Seller | Easy Returns | COD Available — using small icons with short labels",
+          "Keep the detailed 'Why Buy From Robocraze' section lower on the page, but ensure the critical trust signals appear in the purchase decision zone"
+        ],
+        "benchmark_tag": "Growing — 7/10 Indian electronics stores place trust badges near ATC"
+      }
+    ],
+    "cart": [
+      {
+        "id": "cart_f1",
+        "title": "Cart drawer lacks product images and cross-sell",
+        "header": "A well-designed cart drawer with product thumbnails and cross-sell recommendations can increase AOV by 10-15% — Robo Craze's cart drawer is minimal",
+        "severity": "important",
+        "pattern_type": "standard",
+        "client_screenshot": "screenshots/cart_drawer_client.jpeg",
+        "client_label": "Robo Craze — Mobile Cart Drawer",
+        "benchmark_screenshot": "screenshots/bench_cart_pihut.jpeg",
+        "benchmark_label": "The Pi Hut — ATC Confirmation + Extras",
+        "observations": [
+          "The cart drawer shows product name and price but the product thumbnail is partially visible and cut off by the drawer edge — making it hard to visually confirm the right product was added",
+          "No cross-sell or 'frequently bought together' recommendations appear in the cart drawer — missed opportunity to increase average order value",
+          "The Pi Hut shows 'Awesome Extras' cross-sell recommendations immediately after adding to cart, with product images, ratings, and ATC buttons for accessories",
+          "The 'Robocraze Academy' subscription offer (1 Month @ 199/-, 1 Year @ 999/-) in the cart drawer is not relevant to most product purchases and adds friction"
+        ],
+        "recommendations": [
+          "Redesign the cart drawer to show: clear product thumbnail, name, variant, price, and a 2-3 item 'Frequently Bought Together' carousel with complementary accessories",
+          "Replace the academy subscription offer with context-aware cross-sells: if adding a Raspberry Pi board, suggest cases, power supplies, and SD cards"
+        ],
+        "benchmark_tag": "Standard — 7/10 electronics stores show cross-sell in cart drawer"
+      },
+      {
+        "id": "cart_f2",
+        "title": "No coupon/discount code field visible on cart page",
+        "header": "A visible coupon code field on the cart page increases checkout intent — Robo Craze's cart page shows no discount code input before proceeding to checkout",
+        "severity": "opportunity",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/cart_f2_client.jpeg",
+        "client_label": "Robo Craze — Mobile Cart Page",
+        "benchmark_screenshot": "screenshots/bench_pdp_thinkrobotics_2.jpeg",
+        "benchmark_label": "ThinkRobotics — Mobile (Discount Code Visible)",
+        "observations": [
+          "The cart page shows: product details, quantity, 'I need a GST invoice', In-Store Pickup option, Order Summary with Subtotal/Total, and PROCEED TO CHECKOUT — but no coupon/discount code field",
+          "Users who received the 'Spin to Win' coupon on arrival have no visible place to enter it until the checkout page — creating uncertainty about whether their discount will apply",
+          "The announcement bar says 'SAVE more when you BUY more. Upto 30% off on BULK PURCHASE' but there's no visible mechanism to apply this discount on the cart page",
+          "Adding a coupon field on the cart page creates a transparent pricing experience and reduces checkout abandonment from users unsure about discount application"
+        ],
+        "recommendations": [
+          "Add a collapsible 'Have a coupon code?' field in the Order Summary section — pre-populate it if the user received a code from the Spin to Win popup",
+          "Show active promotions (e.g., 'Add Rs. X more for free shipping' or 'Buy 2+ for 30% off') as dynamic messages above the checkout button"
+        ],
+        "benchmark_tag": "Growing — 6/10 electronics stores show coupon field on cart page"
+      },
+      {
+        "id": "cart_f3",
+        "title": "Fake urgency timer erodes trust",
+        "header": "Fabricated urgency tactics ('Someone ordered this — 09:49 minutes left') reduce trust with tech-savvy buyers — authenticity drives electronics conversions",
+        "severity": "opportunity",
+        "pattern_type": "differentiator",
+        "client_screenshot": "screenshots/cart_f1_client.jpeg",
+        "client_label": "Robo Craze — Mobile Cart (Urgency Timer)",
+        "benchmark_screenshot": "screenshots/bench_pdp_pihut_rpi5_scroll.jpeg",
+        "benchmark_label": "The Pi Hut — Clean Cart Experience",
+        "observations": [
+          "The cart page displays: 'Please, hurry! Someone has placed an order on one of the items you have in the cart. We'll keep it for you for 09:49 minutes' — this is a fabricated urgency message",
+          "Robo Craze's core audience — makers, engineers, students, and hobbyists — are technically literate and easily recognize fake urgency timers, which damages brand credibility",
+          "The Pi Hut uses genuine stock availability ('In stock') and real delivery estimates instead of artificial pressure tactics — building trust with the maker community",
+          "Electronics purchases are considered decisions, not impulse buys — fake urgency contradicts the buyer psychology of this category"
+        ],
+        "recommendations": [
+          "Replace the fake urgency timer with genuine stock-level indicators: 'Only 3 left in stock' (when actually low), or 'Order before 2 PM for same-day dispatch'",
+          "Use real value-add urgency: 'Free shipping on this order (above Rs. 999)' or 'Your items qualify for same-day dispatch from Bangalore warehouse'"
+        ],
+        "benchmark_tag": "Differentiator — 8/10 top electronics stores avoid fake urgency timers"
+      },
+      {
+        "id": "cart_f4",
+        "title": "No order savings summary on cart page",
+        "header": "Showing total savings reinforces purchase value and reduces cart abandonment by 5-8% — Robo Craze's cart shows no savings summary",
+        "severity": "opportunity",
+        "pattern_type": "growing",
+        "client_screenshot": "screenshots/cart_f2_client.jpeg",
+        "client_label": "Robo Craze — Mobile Cart Order Summary",
+        "benchmark_screenshot": "screenshots/bench_hp_thinkrobotics.jpeg",
+        "benchmark_label": "ThinkRobotics — Mobile",
+        "observations": [
+          "The Order Summary shows only Subtotal (Rs. 12,856) and TOTAL (Rs. 12,856) — no savings line showing the total discount from MRP",
+          "The product line shows MRP Rs. 14,499 crossed out with sale price Rs. 12,856, but the order summary doesn't aggregate this into a 'Total Savings: Rs. 1,643' line",
+          "Indian e-commerce leaders (Croma, boAt) prominently display total savings in the cart order summary — reinforcing the value perception before checkout",
+          "Showing 'You Save Rs. 1,643 on this order' in the summary creates a positive reinforcement loop that reduces cart abandonment"
+        ],
+        "recommendations": [
+          "Add a green 'You Save Rs. X' line in the Order Summary between Subtotal and Total — dynamically calculating total savings from MRP across all cart items",
+          "When items qualify for free shipping (above Rs. 999), show 'Free Shipping: Saved Rs. 99' as an additional savings line for extra reinforcement"
+        ],
+        "benchmark_tag": "Growing — 5/10 electronics stores show savings summary in cart"
+      }
+    ]
+  },
+  "counts": {
+    "total": 19,
+    "homepage": 5,
+    "collection": 4,
+    "pdp": 6,
+    "cart": 4,
+    "critical": 6,
+    "important": 8,
+    "opportunity": 5
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=375, initial-scale=1.0">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #fff; width: 375px; }
+.proposed-badge { background: #0066cc; color: #fff; text-align: center; padding: 6px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; }
+.delivery-section { margin: 16px; padding: 16px; border: 1px solid #e0e0e0; border-radius: 10px; }
+.delivery-header { font-size: 13px; font-weight: 600; color: #1a1a1a; margin-bottom: 10px; }
+.pincode-input { display: flex; gap: 8px; margin-bottom: 14px; }
+.pincode-field { flex: 1; padding: 10px 12px; border: 1.5px solid #0066cc; border-radius: 8px; font-size: 14px; font-weight: 600; color: #1a1a1a; outline: none; }
+.pincode-btn { padding: 10px 16px; background: #0066cc; color: #fff; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.delivery-result { background: #f0faf0; border-radius: 8px; padding: 12px; }
+.delivery-row { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid #e8f5e9; }
+.delivery-row:last-child { border-bottom: none; }
+.delivery-icon { font-size: 18px; width: 28px; text-align: center; }
+.delivery-info { flex: 1; }
+.delivery-type { font-size: 12px; font-weight: 600; color: #1a1a1a; }
+.delivery-date { font-size: 11px; color: #2e7d32; font-weight: 500; }
+.delivery-cost { font-size: 11px; color: #666; }
+.free-tag { background: #2e7d32; color: #fff; font-size: 9px; padding: 2px 6px; border-radius: 3px; font-weight: 600; }
+.cod-badge { display: inline-flex; align-items: center; gap: 4px; background: #fff3e0; padding: 6px 10px; border-radius: 6px; margin-top: 10px; font-size: 11px; color: #e65100; font-weight: 500; }
+.atc-section { margin: 16px; }
+.atc-btn { width: 100%; padding: 14px; background: #0066cc; color: #fff; border: none; border-radius: 8px; font-size: 15px; font-weight: 700; cursor: pointer; margin-bottom: 8px; }
+.buynow-btn { width: 100%; padding: 12px; background: #fff; color: #0066cc; border: 2px solid #0066cc; border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="proposed-badge">PROPOSED IMPLEMENTATION — ROBO CRAZE</div>
+
+<div class="delivery-section">
+    <div class="delivery-header">📍 Delivery & Availability</div>
+    <div class="pincode-input">
+        <input class="pincode-field" value="560001" readonly>
+        <button class="pincode-btn">Check</button>
+    </div>
+    <div class="delivery-result">
+        <div class="delivery-row">
+            <div class="delivery-icon">🚀</div>
+            <div class="delivery-info">
+                <div class="delivery-type">Express Delivery</div>
+                <div class="delivery-date">Tomorrow, 21 March</div>
+            </div>
+            <span class="free-tag">FREE</span>
+        </div>
+        <div class="delivery-row">
+            <div class="delivery-icon">📦</div>
+            <div class="delivery-info">
+                <div class="delivery-type">Standard Delivery</div>
+                <div class="delivery-date">22-24 March</div>
+            </div>
+            <span class="free-tag">FREE</span>
+        </div>
+        <div class="delivery-row">
+            <div class="delivery-icon">🏪</div>
+            <div class="delivery-info">
+                <div class="delivery-type">Store Pickup — Bangalore</div>
+                <div class="delivery-date">Ready in 30 minutes</div>
+            </div>
+            <span class="free-tag">FREE</span>
+        </div>
+    </div>
+    <div class="cod-badge">💵 Cash on Delivery available for this pincode</div>
+</div>
+
+<div class="atc-section">
+    <button class="atc-btn">ADD TO CART — Rs. 12,856</button>
+    <button class="buynow-btn">BUY IT NOW</button>
+</div>
+
+</body>
+</html>

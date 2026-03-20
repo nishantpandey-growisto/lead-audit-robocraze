@@ -1,0 +1,42 @@
+{
+  "brand_name": "Robo Craze",
+  "brand_slug": "robocraze",
+  "brand_url": "robocraze.com",
+  "report_date": "March 2026",
+  "password": "robocraze2026",
+  "industry": "electronics",
+  "industry_label": "Electronics & Tech",
+  "industry_short": "electronics",
+  "geo": "india",
+  "audit_type": "lead",
+  "competitors": [
+    {"name": "ThinkRobotics", "url": "thinkrobotics.com"},
+    {"name": "The Pi Hut", "url": "thepihut.com"},
+    {"name": "Pimoroni", "url": "shop.pimoroni.com"}
+  ],
+  "pagespeed_api_key": "***REDACTED_API_KEY***",
+  "feedback_rules": [
+    "Verify popups in incognito: wait 30+ sec, scroll, exit-intent test",
+    "Test cart features with items in cart, never empty",
+    "Distinguish missing vs broken vs conditionally visible",
+    "Read exact SimilarWeb percentages, never estimate from bar charts",
+    "Use Lighthouse LAB data, not CrUX field data for scores",
+    "Verify proxy signals on-page: /collections/all for products, search Instagram variants",
+    "At least 60% of findings should be screenshot-only (Level 3)",
+    "Benchmark screenshots must show the EXACT feature recommended",
+    "Use client_screenshot=null placeholder when feature genuinely absent",
+    "Cart findings need cart screenshots, PDP needs PDP screenshots",
+    "For electronics: Star ratings is ambiguous — BEE vs review. Be specific.",
+    "For electronics: Spec comparison is critical — missing comparison tool is high priority",
+    "For electronics: EMI/BNPL calculator is STANDARD for high-AOV electronics",
+    "Create mockups when no competitor cleanly demonstrates a feature — prefer mockups over competitor screenshots for feature enhancements",
+    "Never approximate SimilarWeb numbers — read exact text percentages"
+  ],
+  "industry_benchmarks": {
+    "cvr": {"p25": "0.09%", "p50": "0.15%", "p75": "0.32%", "p50_raw": "0.15"},
+    "atc_rate": {"p25": "6.42%", "p50": "11.95%", "p75": "20.27%"},
+    "pdp_view_rate": {"p25": "60.4%", "p50": "89.6%", "p75": "115.9%"},
+    "cart_to_checkout": {"p25": "22.8%", "p50": "29.8%", "p75": "40.5%"},
+    "checkout_completion": {"p25": "12.3%", "p50": "20.7%", "p75": "32.1%"}
+  }
+}
