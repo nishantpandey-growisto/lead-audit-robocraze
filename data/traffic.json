@@ -76,7 +76,7 @@
   "proxy_signals": {
     "product_count": "4,125",
     "product_count_source": "/collections/all pagination: 'Showing 1-20 of 4125'",
-    "review_count": "Active (42–90 per product)",
+    "review_count": "90+",
     "review_source": "Judge.me (Shopify extension)",
     "review_details": [
       {"product": "HC-SR04 Ultrasonic Sensor", "reviews": 42, "rating": "4.67/5"},
